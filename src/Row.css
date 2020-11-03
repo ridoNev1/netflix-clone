@@ -18,6 +18,10 @@
   overflow: scroll;
   padding: 23px 0;
 }
+.poster-title {
+  text-align: center;
+  margin-top: -50px;
+}
 .trending-poster::-webkit-scrollbar {
   width: 0;
   height: 5px;

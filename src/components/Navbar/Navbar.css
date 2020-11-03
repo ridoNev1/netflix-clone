@@ -1,0 +1,28 @@
+.navbar {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  transition: all .3s ease-in;
+  overflow-x: hidden;
+}
+.navbar img:nth-child(2) {
+  width: 45px;
+}
+.navbar img:nth-child(1) {
+  width: 120px;
+}
+
+.nav-black {
+  background-color: #111;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar img:nth-child(2) {
+    display: none;
+  }
+  .navbar {
+    padding: 7px;
+  }
+}

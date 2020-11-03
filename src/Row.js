@@ -19,7 +19,6 @@ function Row({ title, fetchUrl, potrait }) {
     const fetchData = async () => {
       const request = await axios.get(fetchUrl)
       setMovies(request.data.results)
-      console.log(request.data.results)
     }
     fetchData()
   }, [fetchUrl, potrait]);
@@ -28,8 +27,8 @@ function Row({ title, fetchUrl, potrait }) {
     <div className='row-container'>
       <h2> {title} </h2>
       <div className="trending-poster">
-        {movies.map(elMovies => (
-          <img src={`${baseUrl}${potrait ? elMovies.poster_path : elMovies.backdrop_path}`} alt="posterImage" key={elMovies.id} style={stylePoster}/>
+        {movies.map((elMovies, index) => (
+          <img src={`${baseUrl}${potrait ? elMovies.poster_path : elMovies.backdrop_path}`} alt="posterImage" key={index} style={stylePoster}/>
         ))}
       </div>
     </div>
