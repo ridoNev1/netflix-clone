@@ -4,7 +4,7 @@ import './Row.css'
 //rfce -> snippets
 const baseUrl = 'https://image.tmdb.org/t/p/original/'
 
-function Row({ title, fetchUrl, potrait }) {
+function Row({ title, fetchUrl, potrait, setDetail }) {
   const [movies, setMovies] = useState([])
   const stylePoster = {
     width: ''
@@ -24,11 +24,11 @@ function Row({ title, fetchUrl, potrait }) {
   }, [fetchUrl, potrait]);
 
   return (
-    <div className='row-container'>
+    <div className='row-container' >
       <h2> {title} </h2>
       <div className="trending-poster">
         {movies.map((elMovies, index) => (
-          <img src={`${baseUrl}${potrait ? elMovies.poster_path : elMovies.backdrop_path}`} alt="posterImage" key={index} style={stylePoster}/>
+          <img src={`${baseUrl}${potrait ? elMovies.poster_path : elMovies.backdrop_path}`} alt="posterImage" key={index} style={stylePoster} onClick={() => setDetail(elMovies)}/>
         ))}
       </div>
     </div>

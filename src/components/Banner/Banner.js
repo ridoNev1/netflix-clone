@@ -22,7 +22,7 @@ function Banner() {
   }
 
   return (
-    <div className="banner-box" style={bannerStyle}>
+    <div className="banner-box" style={bannerStyle} >
       <div className="banner-content">
         <h1>{ bannerData?.original_name || bannerData?.name || bannerData?.title }</h1>
         <div className="banner-button">
