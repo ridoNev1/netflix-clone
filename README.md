@@ -1,5 +1,15 @@
 # Getting Started with Create React App
 
+## Description
+my first project using React JS
+
+## Screenshot
+![Screenshot from 2020-11-04 22-58-12](https://user-images.githubusercontent.com/64463093/98134835-c110fe00-1ef1-11eb-8384-f13c6f60fd5c.png)
+![Screenshot from 2020-11-04 22-58-34](https://user-images.githubusercontent.com/64463093/98134849-c40bee80-1ef1-11eb-8c5f-f645310eee7c.png)
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
